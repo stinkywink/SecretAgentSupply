@@ -1,7 +1,70 @@
 html {
   font-size:18px;
 }
-header {
+/* Header */
+.company {
   background-color: black;
   color: white;
+}
+.company .container {
+  display: flex;
+  align-items: center;
+  padding: 0.66rem 0px 0.66rem 0.5rem;
+}
+.company img {
+  height: 1.5rem;
+  padding-right: 0.8333rem;
+}
+/* Banner */
+.main-banner {
+  background-image: url(../images/banner.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 25rem;
+}
+.headline {
+  width: 20rem;
+  background-color: black;
+  color: white;
+  position: relative;
+  top: 9rem;
+  padding: 2rem 3rem;
+}
+.headline h1 {
+  font-size: 2rem;
+  margin: 0.25rem 0px;
+  line-height: 1.2em;
+}
+h1, h4 {
+  font-weight: bold;
+}
+/* Navigation */
+nav {
+  background-color: firebrick;
+  color: white;
+}
+li {
+  display: list-item;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+}
+.container {
+  max-width: 960px;
+  margin: 0px auto;
+}
+body {
+  font-family: Helvetica;
+}
+div {
+  display: block;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+  height: 5rem;
 }
