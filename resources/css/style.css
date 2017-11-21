@@ -1,6 +1,16 @@
 html {
   font-size:18px;
 }
+.container {
+  max-width: 960px;
+  margin: 0px auto;
+}
+body {
+  font-family: Helvetica;
+}
+div {
+  display: block;
+}
 /* Header */
 .company {
   background-color: black;
@@ -17,23 +27,23 @@ html {
 }
 /* Banner */
 .main-banner {
-  background-image: url(../images/banner.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
   height: 25rem;
+  background: url(../images/banner.jpeg) center center / cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .headline {
-  width: 20rem;
   background-color: black;
   color: white;
+  width: 20em;
   position: relative;
-  top: 9rem;
-  padding: 2rem 3rem;
+  top: 9em;
+  padding: 2em 3em;
 }
 .headline h1 {
-  font-size: 2rem;
-  margin: 0.25rem 0px;
+  font-size: 2em;
   line-height: 1.2em;
+  margin: 0.25em 0px;
 }
 h1, h4 {
   font-weight: bold;
@@ -51,20 +61,52 @@ nav ul {
   justify-content: space-between;
   padding: 0.75rem;
 }
-.container {
-  max-width: 960px;
-  margin: 0px auto;
+/* Products and Contact */
+.products, .business-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0px 0px;
 }
-body {
-  font-family: Helvetica;
+.product-image {
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 4px;
+  border-style: solid;
+  border-color: black;
+  border-image: initial;
+  padding: 2em 0px;
 }
-div {
+.product-image img {
+  max-width: 8rem;
+}
+.product {
+  width: 30%;
+}
+img {
+  border-style: none;
+}
+.description {
   display: block;
+  background-color: black;
+  color: white;
+  text-align; center;
+  padding:0.5rem;
 }
-
+.info {
+  width: 35%;
+}
+.info .title {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+}
 /* Footer */
 footer {
   background-color: black;
   color: white;
-  height: 5rem;
+  margin-top: 4rem;
+  padding: 5em 0px;
 }
