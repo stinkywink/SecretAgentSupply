@@ -55,11 +55,15 @@ nav {
 }
 li {
   display: list-item;
+  text-align: -webkit-match-parent;
 }
 nav ul {
   display: flex;
   justify-content: space-between;
   padding: 0.75rem;
+}
+.mobile-nav {
+  display: none;
 }
 /* Products and Contact */
 .products, .business-info {
@@ -109,4 +113,36 @@ footer {
   color: white;
   margin-top: 4rem;
   padding: 5em 0px;
+}
+ul {
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 40px;
+}
+/* Media Query For Tablets*/
+@media only screen and (max-width:1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width:1024px) {
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+}
+@media only screen and (max-width:1024px) {
+  nav ul {
+    display: none;
+  }
+}
+@media only screen and (max-width:1024px) {
+  .product {
+    width: 47%;
+ }
+ .glasses {
+   display: none;
+ }
 }
